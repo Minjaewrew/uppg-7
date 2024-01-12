@@ -76,7 +76,7 @@ aside img#sledhundar {
     overflow: hidden;
 }
 
-.toppnav a {
+.topnav a {
     float: left;
     display: block;
     color: black;
@@ -103,11 +103,11 @@ aside img#sledhundar {
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
+    .topnav a:not(.responsive)a:not(:first-child) {
         display: none;
     }
 
-    .topnav a.icon {
+    .topnav :not(.responsive) a.icon {
         float: right;
         display: block;
     }
