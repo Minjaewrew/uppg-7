@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:ital@0;1&display=swap');
+
+
 body {
-    font-family: "https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet";
+    font-family: Oswald, sans-serif;
     background-image: url(img/tre.webp);
     background-color: lightgray;
 
@@ -8,7 +11,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: "https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap" rel="stylesheet";
+    font-family: Oswald, sans-serif;
 }
 
 article,
@@ -103,11 +106,11 @@ aside img#sledhundar {
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(.responsive)a:not(:first-child) {
+    .topnav a:not(:first-child) {
         display: none;
     }
 
-    .topnav :not(.responsive) a.icon {
+    .topnav a.icon {
         float: right;
         display: block;
     }
@@ -131,7 +134,7 @@ aside img#sledhundar {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
     }
@@ -148,20 +151,6 @@ aside img#sledhundar {
         text-align: left;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -237,36 +226,6 @@ input[type=submit] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 600px) {
 
     .col-25,
@@ -274,5 +233,20 @@ input[type=submit] {
     input[type=submit] {
         width: 100%;
         margin-top: 0%;
+    }
+}
+
+.contentDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.3vh;
+
+}
+
+@media (orientation: portrait) {
+    .contentDiv {
+        grid-template-columns: 1fr;
     }
 }
